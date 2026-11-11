@@ -35,12 +35,13 @@ python score.py --submission /path/to/this/repo --data _sandbox/unicef --schema 
 
 Use `--phase 2` for the final-phase form, and `data/world_bank.json` or `data/unhcr.json` for the other instruments.
 
-Skill on the sandbox (synthetic data; the organizers note that sandbox scores are not a measure of value):
+Exact skill on the sandbox in the final form (`--phase 2`; synthetic data, and the organizers note that sandbox scores are not a measure of value):
 
-| form | UNICEF | World Bank | UNHCR |
-|---|---|---|---|
-| development (`--phase 1`) | 0.4031 | 0.2776 | 0.2299 |
-| final (`--phase 2`) | 0.3943 | 0.2807 | 0.2204 |
+| UNICEF | World Bank | UNHCR |
+|---|---|---|
+| 0.3943 | 0.2807 | 0.2204 |
+
+In the development form (`--phase 1`) the scorer adds noise and rounds the printed skill, as the leaderboard does, so those numbers vary between runs.
 
 ## Requirements
 
